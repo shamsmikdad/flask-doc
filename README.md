@@ -1,5 +1,5 @@
-# flask-doc
-what is flask :
+## Flask-documentation
+##what is flask:.
 Flask is a web framework, it’s a Python module that lets you develop web applications easily. 
 It’s has a small and easy-to-extend core, it’s a microframework 
 Flask is a web application framework written in Python
@@ -12,7 +12,7 @@ because it doesn’t have a huge learning curve.
 
 On top of that it’s very explicit, which increases readability.
 
-Requirement---------------------------------------
+##Requirement---------------------------------------
 1-) Python Version
     We recommend using the latest version of Python. Flask supports Python 3.6 and newer.
 2-) other Dependencies distributions will be installed automatically when installing Flask:
