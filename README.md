@@ -24,7 +24,7 @@ because it doesn’t have a huge learning curve.
 
 ## 1-) install python:
 	
-	[get the latest version](https://www.python.org/ftp/python/3.10.0/python-3.10.0-amd64.exe)
+[get the latest version](https://www.python.org/ftp/python/3.10.0/python-3.10.0-amd64.exe)
 	
 ## 2-) use virtual enviroment:
 
