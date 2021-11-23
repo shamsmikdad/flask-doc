@@ -1,5 +1,5 @@
 # Flask-documentation
-# what is flask:.
+## what is flask:.
 Flask is a web framework, it’s a Python module that lets you develop web applications easily. 
 It’s has a small and easy-to-extend core, it’s a microframework 
 Flask is a web application framework written in Python
@@ -49,10 +49,12 @@ Create a project folder and a venv folder within:
 		
 ### Activate the environment:
 
-	in windows----------
+in windows----------
+
 		> venv\Scripts\activate
 		
-	in linux-------------
+in linux-------------
+
 		$ . venv/bin/activate
 		
 Your shell prompt will change to show the name of the activated environment(venv).
@@ -66,24 +68,41 @@ Your shell prompt will change to show the name of the activated environment(venv
 	$ python import Flask,
 	
 ## 4-) creat a file in our folder and name it as falsk-proj.py
-	
+
 First we imported the Flask class. An instance of this class will be our WSGI application.
 
-	from flask import Flask
+	from flask import Flask, render_tamplate
 
-Next we create an instance of this class. The first argument is the name of the application’s module or package. __name__ is a convenient shortcut for this that is appropriate for most cases. This is needed so that Flask knows where to look for resources such as templates and static files.
+Next we create an instance of this class. The first argument is the name of the application’s module or package.
+__name__ is a convenient shortcut for this that is appropriate for most cases.
+This is needed so that Flask knows where to look for resources such as templates and static files.
 
 	app = Flask(__name__)
 	
 We then use the route() decorator to tell Flask what URL should trigger our function.
+and function called index with to render the index.html flie.
 
-	@app.route("/")
+	@app.route("/index.html")
 	
+	def index():
+    		return render_tamplate("index.html")
+	
+open the folder with vs-code, then create a template folder, add new file and name it as "index.html" and wirte inside of it our code.
 
-	def hello_world():
-    	return "<p>Hello, World!</p>"
+wirte a test code in the file such like:
 	
+	<h1> htis is the test code </h1>
+
 5-) start up the server:
-	
-	set FLASK_APP=falsk-proj
-	
+
+in windows----------
+
+	> set FLASK_APP=falsk-proj
+	> flask run
+
+in linux-------------
+
+	> export FLASK_APP=falsk-proj
+	> flask run
+
+
