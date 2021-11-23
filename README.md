@@ -28,24 +28,26 @@ because it doesn’t have a huge learning curve.
 	
 ## 2-) use virtual enviroment:
 
-	to start our project its recommended to use virtual enviroment to manage the dependencies for your project, both development and in production.
-	Virtual environments are independent groups of Python libraries, one for each project.
-	Packages installed for one project will not affect other projects or the operating system’s packages.
-	Python comes bundled with the venv module to create virtual environments.
+to start our project its recommended to use virtual enviroment to manage the dependencies for your project, both development and in production.
+Virtual environments are independent groups of Python libraries, one for each project.
+Packages installed for one project will not affect other projects or the operating system’s packages.
+Python comes bundled with the venv module to create virtual environments.
 	
 ### Create an environment:
 
 Create a project folder and a venv folder within:
 	
-	in windows----------
-		> mkdir myproject
-		> cd myproject
-		> py -3 -m venv venv
+in windows----------
+
+		 mkdir myproject
+		 cd myproject
+		 py -3 -m venv venv
 		
-	in linux-------------
-		$ mkdir myproject
-		$ cd myproject
-		$ python3 -m venv venv
+in linux-------------
+
+		 mkdir myproject
+		 cd myproject
+		 python3 -m venv venv
 		
 ### Activate the environment:
 
