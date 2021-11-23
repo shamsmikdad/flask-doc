@@ -87,7 +87,7 @@ and function called index with to render the index.html flie.
 	@app.route("/index.html")
 	
 	def index():
-    		return render_tamplate("index.html")
+            return render_tamplate("index.html")
 	
 open the folder with vs-code, then create a template folder, add new file and name it as "index.html" and wirte inside of it our code.
 
