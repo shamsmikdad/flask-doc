@@ -14,43 +14,58 @@ because it doesn’t have a huge learning curve.
 
 2-) other Dependencies distributions will be installed automatically when installing Flask:
 
-	-Werkzeug 
-	-Jinja 
-	-MarkupSafe 
-	-ItsDangerous
-	-Click
+-Werkzeug 
+-Jinja 
+-MarkupSafe 
+-ItsDangerous
+-Click
 	
 ## Installation---------------------------------------------
 
-1-) install python:
+## 1-) install python:
 	
-	latest version (https://www.python.org/ftp/python/3.10.0/python-3.10.0-amd64.exe)
+	[get the latest version](https://www.python.org/ftp/python/3.10.0/python-3.10.0-amd64.exe)
 	
-2-) to start our project its recommended to use virtual enviroment to manage the dependencies for your project, both development and in production.
-	Virtual environments are independent groups of Python libraries, one for each project. Packages installed for one project will not affect other projects or the operating system’s packages.
-	Python comes bundled with the venv module to create virtual environments. 
-	(Create an environment)
-	Create a project folder and a venv folder within:
+## 2-) use virtual enviroment:
+
+	to start our project its recommended to use virtual enviroment to manage the dependencies for your project, both development and in production.
+	Virtual environments are independent groups of Python libraries, one for each project.
+	Packages installed for one project will not affect other projects or the operating system’s packages.
+	Python comes bundled with the venv module to create virtual environments.
+	
+### Create an environment:
+
+Create a project folder and a venv folder within:
+	
 	in windows----------
 		> mkdir myproject
 		> cd myproject
 		> py -3 -m venv venv
+		
 	in linux-------------
 		$ mkdir myproject
 		$ cd myproject
 		$ python3 -m venv venv
-	Activate the environment:
+		
+### Activate the environment:
+
 	in windows----------
 		> venv\Scripts\activate
+		
 	in linux-------------
 		$ . venv/bin/activate
-	Your shell prompt will change to show the name of the activated environment(venv).
-3-) Install Flask:
+		
+Your shell prompt will change to show the name of the activated environment(venv).
+
+## 3-) Install Flask:
+
 	$ pip install Flask
-   Flask is now installed, in the python and we can use it by export it in the python comand like:
+	
+  Flask is now installed, in the python and we can use it by export it in the python comand like:
+  
 	$ python import Flask,
 	
-4-) creat a file in our folder and name it as falsk-proj.py
+## 4-) creat a file in our folder and name it as falsk-proj.py
 	
 First we imported the Flask class. An instance of this class will be our WSGI application.
 
