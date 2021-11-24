@@ -23,8 +23,14 @@ We recommend using the latest version of Python. Flask supports Python 3.6 and n
 ## Installation---------------------------------------------
 
 ## 1-) install python:
-	
-[get the latest version](https://www.python.org/ftp/python/3.10.0/python-3.10.0-amd64.exe)
+
+#### in windows----------
+
+[get the latest python version for windows 64](https://www.python.org/ftp/python/3.10.0/python-3.10.0-amd64.exe)
+
+#### in linux-------------
+
+	sudo apt-get install python3.10
 	
 ## 2-) use virtual enviroment:
 
@@ -39,25 +45,25 @@ Create a project folder and a venv folder within:
 	
 #### in windows----------
 
-		 mkdir myproject
-		 cd myproject
-		 py -3 -m venv venv
+	 mkdir myproject
+	 cd myproject
+	 py -3 -m venv venv
 		
 #### in linux-------------
 
-		 mkdir myproject
-		 cd myproject
-		 python3 -m venv venv
+	 mkdir myproject
+	 cd myproject
+	 python3 -m venv venv
 		
 ### Activate the environment:
 
 #### in windows----------
 
-		 venv\Scripts\activate
+	 venv\Scripts\activate
 		
 #### in linux-------------
 
-		 source venv/bin/activate
+	 source venv/bin/activate
 		
 Your shell prompt will change to show the name of the activated environment(venv).
 
