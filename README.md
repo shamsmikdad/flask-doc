@@ -106,7 +106,7 @@ and function called index with to render the index.html flie.
 	def index():
             return render_tamplate("index.html")
 	
-open the folder with vs-code, then create a template folder, add new file in template and name it as "index.html" and wirte inside of it our code.
+open the myproject folder with vs-code, then create a template folder, add new file in template and name it as "index.html" and wirte inside of it our code.
 
 wirte a test code in the file such like:
 	
