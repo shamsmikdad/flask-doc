@@ -54,39 +54,39 @@ Create a project folder and a venv folder within:
 	
 #### in windows CMD ----------
 
-	 mkdir myproject
-	 cd myproject
-	 py -3 -m venv venv
+	mkdir myproject
+	cd myproject
+	py -3 -m venv .venv
 		
 #### in linux BASH -------------
 
-	 mkdir myproject
-	 cd myproject
-	 python3 -m venv venv
+	mkdir myproject
+	cd myproject
+	python3 -m venv .venv
 		
 ### Activate the environment:
 
 #### in windows----------
 
-	 venv\Scripts\activate
+	.venv\Scripts\activate
 		
 #### in linux-------------
 
-	 source venv/bin/activate
+	source .venv/bin/activate
 		
 Your shell prompt will change to show the name of the activated environment(venv).
 
 ## 3-) Install Flask:
 
-	 pip install Flask
+	pip install Flask
 	
   Flask is now installed, in the python and we can use it by export it in the python comand.
 	
-## 4-) creat a file in our folder and name it as falsk-proj.py
+## 4-) creat a file in our folder and name it as app.py
 
 open CMD and create afile with vs code 
 
-	code falsk-proj.py
+	code app.py
 
 First we imported the Flask class. An instance of this class will be our WSGI application.
 
@@ -101,14 +101,23 @@ This is needed so that Flask knows where to look for resources such as templates
 We then use the route() decorator to tell Flask what URL should trigger our function.
 and function called index with to render the index.html flie.
 
-	@app.route("/index.html")
-	
-	def index():
-            return render_tamplate("index.html")
-	
-open the myproject folder with vs-code, then create a template folder, add new file in template and name it as "index.html" and wirte inside of it our code.
+	@app.route('/')
+	def home():
+	    return render_template("index.html")
 
-wirte a test code in the file such like:
+	if __name__ == "__main__":
+	    app.run(debug=True)
+
+	
+then create a template folder, add new file in template and name it as "index.html" and wirte inside of it our code: 
+
+write in the terminal (CMD or BASH):
+
+	mkdir templates
+	cd templates
+	code index.html 
+
+wirte a test code in the index file such like:
 	
 	<h1> htis is the test code </h1>
 
@@ -116,14 +125,14 @@ wirte a test code in the file such like:
 
 in windows CMD----------
 
-	 set FLASK_APP=falsk-proj
-	 set FLASK_DEBUG=1
-	 flask run
+	set FLASK_APP=falsk-proj
+	set FLASK_DEBUG=1
+	flask run
 
 in linux BASH-------------
 
-	 export FLASK_APP=falsk-proj
-	 export FLASK_DEBUG=1
-	 flask run
+	export FLASK_APP=falsk-proj
+	export FLASK_DEBUG=1
+	flask run
 
 
