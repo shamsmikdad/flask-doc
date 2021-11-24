@@ -67,7 +67,7 @@ Your shell prompt will change to show the name of the activated environment(venv
 	
   Flask is now installed, in the python and we can use it by export it in the python comand like:
   
-	 python import Flask,
+	 python import Flask
 	 exit()
 	
 ## 4-) creat a file in our folder and name it as falsk-proj.py
