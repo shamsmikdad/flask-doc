@@ -27,6 +27,7 @@ We recommend using the latest version of Python. Flask supports Python 3.6 and n
 #### in windows----------
 
 [get the latest python version for windows 64](https://www.python.org/ftp/python/3.10.0/python-3.10.0-amd64.exe)
+and then you need to install it.
 
 #### in linux-------------
 
