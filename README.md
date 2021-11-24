@@ -90,24 +90,26 @@ open CMD and create afile with vs code
 
 First we imported the Flask class. An instance of this class will be our WSGI application.
 
-	from flask import Flask, render_tamplate
+    from flask import Flask, render_template
 
 Next we create an instance of this class. The first argument is the name of the application’s module or package.
 __name__ is a convenient shortcut for this that is appropriate for most cases.
 This is needed so that Flask knows where to look for resources such as templates and static files.
 
-	app = Flask(__name__)
+    app = Flask(__name__)
+
 	
 We then use the route() decorator to tell Flask what URL should trigger our function.
 and function called index with to render the index.html flie.
 
 
-	@app.route('/')
-	def home():
-		return render_template("index.html")
+    @app.route('/')
+    def home():
+        return render_template("index.html")
 
-	if __name__ == "__main__":
-		app.run(debug=True)
+
+    if __name__ == "__main__":
+        app.run(debug=True)
 
 	
 then create a template folder, add new file in template and name it as "index.html" and wirte inside of it our code: 
@@ -120,7 +122,7 @@ write in the terminal (CMD or BASH):
 
 wirte a test code in the index file such like:
 	
-	<h1> htis is the test code </h1>
+	<h1> this is the test code </h1>
 
 5-) start up the server:
 
@@ -134,5 +136,8 @@ in linux BASH-------------
 	cd ..
 	flask run
 
+### now the server is runing go to the browser and follow the link:
+	
+	http://127.0.0.1:5000/
 
 
