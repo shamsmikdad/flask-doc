@@ -57,7 +57,7 @@ Create a project folder and a venv folder within:
 		
 #### in linux-------------
 
-		 . venv/bin/activate
+		 source venv/bin/activate
 		
 Your shell prompt will change to show the name of the activated environment(venv).
 
