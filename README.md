@@ -44,13 +44,13 @@ Python comes bundled with the venv module to create virtual environments.
 
 Create a project folder and a venv folder within:
 	
-#### in windows----------
+#### in windows CMD ----------
 
 	 mkdir myproject
 	 cd myproject
 	 py -3 -m venv venv
 		
-#### in linux-------------
+#### in linux BASH -------------
 
 	 mkdir myproject
 	 cd myproject
@@ -76,6 +76,10 @@ Your shell prompt will change to show the name of the activated environment(venv
 	
 ## 4-) creat a file in our folder and name it as falsk-proj.py
 
+open CMD and create afile with vs code 
+
+	code falsk-proj.py
+
 First we imported the Flask class. An instance of this class will be our WSGI application.
 
 	from flask import Flask, render_tamplate
@@ -94,7 +98,7 @@ and function called index with to render the index.html flie.
 	def index():
             return render_tamplate("index.html")
 	
-open the folder with vs-code, then create a template folder, add new file and name it as "index.html" and wirte inside of it our code.
+open the folder with vs-code, then create a template folder, add new file in template and name it as "index.html" and wirte inside of it our code.
 
 wirte a test code in the file such like:
 	
