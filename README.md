@@ -101,12 +101,13 @@ This is needed so that Flask knows where to look for resources such as templates
 We then use the route() decorator to tell Flask what URL should trigger our function.
 and function called index with to render the index.html flie.
 
+
 	@app.route('/')
 	def home():
-	    return render_template("index.html")
+		return render_template("index.html")
 
 	if __name__ == "__main__":
-	    app.run(debug=True)
+		app.run(debug=True)
 
 	
 then create a template folder, add new file in template and name it as "index.html" and wirte inside of it our code: 
