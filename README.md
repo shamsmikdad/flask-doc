@@ -125,10 +125,13 @@ wirte a test code in the index file such like:
 
 in windows CMD----------
 
-	flask run
+	cd ..
+        flask run
 
 in linux BASH-------------
 
-	flask run
+	cd ..
+        flask run
+
 
 
