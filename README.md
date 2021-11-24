@@ -114,13 +114,13 @@ wirte a test code in the file such like:
 
 5-) start up the server:
 
-in windows----------
+in windows CMD----------
 
 	 set FLASK_APP=falsk-proj
 	 set FLASK_DEBUG=1
 	 flask run
 
-in linux-------------
+in linux BASH-------------
 
 	 export FLASK_APP=falsk-proj
 	 export FLASK_DEBUG=1
