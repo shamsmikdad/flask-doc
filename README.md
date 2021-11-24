@@ -8,17 +8,17 @@ because it doesn’t have a huge learning curve.
 
 
 ## Requirement---------------------------------------
-1-) Python Version:
+#### 1-) Python Version:
 
-	We recommend using the latest version of Python. Flask supports Python 3.6 and newer.
+We recommend using the latest version of Python. Flask supports Python 3.6 and newer.
 
-2-) other Dependencies distributions will be installed automatically when installing Flask:
+#### 2-) other Dependencies distributions will be installed automatically when installing Flask:
 
--Werkzeug 
--Jinja 
--MarkupSafe 
--ItsDangerous
--Click
+- Werkzeug 
+- Jinja 
+- MarkupSafe 
+- ItsDangerous
+- Click
 	
 ## Installation---------------------------------------------
 
@@ -37,13 +37,13 @@ Python comes bundled with the venv module to create virtual environments.
 
 Create a project folder and a venv folder within:
 	
-in windows----------
+#### in windows----------
 
 		 mkdir myproject
 		 cd myproject
 		 py -3 -m venv venv
 		
-in linux-------------
+#### in linux-------------
 
 		 mkdir myproject
 		 cd myproject
@@ -51,11 +51,11 @@ in linux-------------
 		
 ### Activate the environment:
 
-in windows----------
+#### in windows----------
 
 		 venv\Scripts\activate
 		
-in linux-------------
+#### in linux-------------
 
 		 . venv/bin/activate
 		
@@ -68,6 +68,7 @@ Your shell prompt will change to show the name of the activated environment(venv
   Flask is now installed, in the python and we can use it by export it in the python comand like:
   
 	 python import Flask,
+	 exit()
 	
 ## 4-) creat a file in our folder and name it as falsk-proj.py
 
@@ -100,11 +101,13 @@ wirte a test code in the file such like:
 in windows----------
 
 	 set FLASK_APP=falsk-proj
+	 set FLASK_DEBUG=1
 	 flask run
 
 in linux-------------
 
 	 export FLASK_APP=falsk-proj
+	 export FLASK_DEBUG=1
 	 flask run
 
 
